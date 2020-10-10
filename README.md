@@ -29,7 +29,7 @@ demo_CNN.py (For video or webcam facial expressions Recognition through trained 
 demoImage_CNN.py (For single image based facial expressions Recognition through trained CNN model)
 
 Dataset Distribution:
-[](results/ANN/Untitled.png?raw=true)
+![Alt text](results/ANN/Untitled.png?raw=true)
 
 **Results:**
 
