@@ -42,5 +42,5 @@ CNN Model:
 
 **Demo:**
 Demo: 
-[![Demo Video](http://img.youtube.com/vi/nX_inqaAzOI/0.jpg)](https://www.youtube.com/watch?v=WRs_PJl_4bA "Demo for Landmarks based NN system for facial expression recognition")
+[![Demo Video](http://img.youtube.com/vi/nX_inqaAzOI/0.jpg)](https://www.youtube.com/watch?v=WRs_PJl_4bA&feature=youtu.be&hd=1 "Demo for Landmarks based NN system for facial expression recognition")
 ...
