@@ -11,7 +11,6 @@ numpy
 scikit-learn 
 matplotlib
 pickle
-*****************************************
 
 A development framework for Automatic Facial Expression Recognition (AFER) systems base on DNN and CNN models. This baseline development framework includes:
 
@@ -30,7 +29,7 @@ demo_CNN.py (For video or webcam facial expressions Recognition through trained 
 demoImage_CNN.py (For single image based facial expressions Recognition through trained CNN model)
 
 Dataset Distribution:
-
+[results/ANN/Untitled.png](url)
 
 
 **Results:**
