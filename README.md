@@ -1,6 +1,7 @@
 # Bacha's AFER Dev Framework
 
 **Dependencies:**
+
 OpenCV
 DLIB
 Tensorflow
@@ -33,5 +34,10 @@ Dataset Distribution:
 
 **Results:**
 
+DNN
+![Alt text](results/ANN/Normalized ANN.png?raw=true)
+
+DNN
+![Alt text](results/CNN/Normalized CNN.png?raw=true)
 
 ...
