@@ -42,4 +42,4 @@ CNN Model:
 
 **Demo:**
 Demo: 
-[![Watch the video](https://img.youtube.com/vi/WRs_PJl_4bA/maxresdefault.jpg)](https://youtu.be/WRs_PJl_4bA)
+[![Watch the video](https://img.youtube.com/vi/WRs_PJl_4bA/0.jpg)](https://youtu.be/WRs_PJl_4bA)
