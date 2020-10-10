@@ -172,39 +172,46 @@ print ("Test set size: ", str(len(x_test)))
 
 def model_generate():
     
+    # Initialising the CNN
     model = Sequential()
     
-    #1st convolution layer
-    model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(img_rows,img_cols,1)))
-    model.add(Conv2D(32, (3, 3), activation='relu'))
+   # 1 - Convolution
+    model.add(Conv2D(64,(3,3), padding='same', activation='relu', input_shape=(img_rows,img_cols,1)))
     model.add(BatchNormalization())
-    model.add(MaxPooling2D(pool_size=(3, 3),strides=(2, 2)))
-#    model.add(Dropout(0.1)) 
-    #2nd convolution layer  
-    #model.add(Conv2D(64, (3, 3), activation='relu'))
-    model.add(Conv2D(64, (3, 3), activation='relu'))
-    model.add(Conv2D(64, (3, 3), activation='relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Dropout(0.2))
+
+    # 2nd Convolution layer
+    model.add(Conv2D(128,(5,5), padding='same', activation='relu'))
     model.add(BatchNormalization())
-    model.add(MaxPooling2D(pool_size=(3,3), strides=(2, 2)))
-#    model.add(Dropout(0.1)) 
-    #3rd convolution layer
-    #model.add(Conv2D(128, (3, 3), activation='relu'))
-    model.add(Conv2D(128, (3, 3), activation='relu'))
-    model.add(Conv2D(128, (3, 3), activation='relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Dropout(0.2))
+
+    # 3rd Convolution layer
+    model.add(Conv2D(512,(5,5), padding='same', activation='relu'))
     model.add(BatchNormalization())
-    model.add(MaxPooling2D(pool_size=(3,3), strides=(2, 2)))
-#    model.add(Dropout(0.5)) 
-    
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Dropout(0.2))
+
+    # 4th Convolution layer
+    model.add(Conv2D(512,(3,3), padding='same', activation='relu'))
+    model.add(BatchNormalization())
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Dropout(0.2))
+
+    # Flattening
     model.add(Flatten())
-    
-    
-    #fully connected neural networks
+
+    # Fully connected layer 1st layer
+    model.add(Dense(512, activation='relu'))
+    model.add(BatchNormalization())
+    model.add(Dropout(0.25))
+
+    # Fully connected layer 2nd layer
     model.add(Dense(1024, activation='relu'))
-    model.add(Dropout(0.5))
-    #model.add(Dense(1024, activation='relu'))
-    ##model.add(Dropout(0.5))
-     
-      
+    model.add(BatchNormalization())
+    model.add(Dropout(0.25))
+
     model.add(Dense(num_classes, activation='softmax'))
     
     #------------------------------
