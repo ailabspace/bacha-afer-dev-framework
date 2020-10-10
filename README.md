@@ -34,10 +34,13 @@ Dataset Distribution:
 
 **Results:**
 
-DNN
+DNN Model:
 ![Alt text](results/ANN/Normalized ANN.png?raw=true)
 
-DNN
+CNN Model:
 ![Alt text](results/CNN/Normalized CNN.png?raw=true)
 
+**Demo:**
+Demo:
+![Alt text](Demo/Demo Video.mp4?raw=true)
 ...
