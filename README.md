@@ -50,3 +50,7 @@ CNN Model:
 **Publication**
 
 Rehman B., Ong W.H., Ngo T.D. (2021) A Development Framework for Automated Facial Expression Recognition Systems. In: Suhaili W.S.H., Siau N.Z., Omar S., Phon-Amuaisuk S. (eds) Computational Intelligence in Information Systems. CIIS 2021. Advances in Intelligent Systems and Computing, vol 1321. Springer, Cham. https://doi.org/10.1007/978-3-030-68133-3_16
+
+**Project Page**
+
+https://ailab.space/projects/multimodal-human-intention-perception/
